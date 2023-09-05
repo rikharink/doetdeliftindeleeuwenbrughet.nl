@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>title</title>
+    <meta charset="utf-8" />
+    <title>Doen de liften in de Leeuwenbrug het?</title>
     <style>
-        body, html {
-            background: #f7e700;
-            color: black;
-            height: 100%;
-            font-size: 4em;
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      body,
+      html {
+        background: #f7e700;
+        color: black;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        position: relative;
+      }
+
+      .lift-name {
+        position: absolute;
+        top: 1vw;
+        font-size: 3vw;
+        text-align: center;
+      }
+
+      .lift-status {
+        font-size: 12vw;
+        text-align: center;
+      }
+      
+      h1 {
+        margin: 2em;
+        font-size: 4vw;
+      }
+
+      .lift {
+        padding: 4vw;
+        border: 1vw solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-    
   </head>
   <body>
-    nee
+    <h1>Doen de liften in de Leeuwenbrug het?</h1>
+    <div class="wrapper">
+      <div id="links" class="lift">
+        <div class="lift-name">links</div>
+        <div class="lift-status">soms</div>
+      </div>
+      <div id="rechts" class="lift">
+        <div class="lift-name">rechts</div>
+        <div class="lift-status">soms</div>
+      </div>
+    </div>
   </body>
 </html>
